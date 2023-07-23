@@ -268,14 +268,12 @@ Freq_data
 \#Plot the bar chart
 
 ``` r
-p <- ggplot(Freq_data, aes(x = factor(Survived), y = Total)) +
+ggplot(Freq_data, aes(x = factor(Survived), y = Total)) +
     geom_bar(stat = "identity") +
     geom_text(aes(label = Total), vjust = -0.5, position = position_dodge(width = 0.9)) +
     theme_minimal()+
     scale_x_discrete(labels = c("Dead", "Survival"))+
     labs(y="Frequency",x="")
-
-print(p)
 ```
 
 ![](week3_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
