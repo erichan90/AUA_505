@@ -124,21 +124,16 @@ str(Xutitanic)
 Mean. Quartiles… \#Task: Write the code that gives summary stats
 
 ``` r
-psych::describe(Xutitanic)
+summary(Xutitanic)
 ```
 
-    ##           vars  n  mean     sd median trimmed   mad min max range skew kurtosis
-    ## Class*       1 32  2.50   1.14    2.5    2.50  1.48   1   4     3 0.00    -1.46
-    ## Sex*         2 32  1.50   0.51    1.5    1.50  0.74   1   2     1 0.00    -2.06
-    ## Age*         3 32  1.50   0.51    1.5    1.50  0.74   1   2     1 0.00    -2.06
-    ## Survived*    4 32  1.50   0.51    1.5    1.50  0.74   1   2     1 0.00    -2.06
-    ## Freq         5 32 68.78 136.00   13.5   36.62 20.02   0 670   670 3.07     9.93
-    ##              se
-    ## Class*     0.20
-    ## Sex*       0.09
-    ## Age*       0.09
-    ## Survived*  0.09
-    ## Freq      24.04
+    ##   Class       Sex        Age     Survived      Freq       
+    ##  1st :8   Male  :16   Child:16   No :16   Min.   :  0.00  
+    ##  2nd :8   Female:16   Adult:16   Yes:16   1st Qu.:  0.75  
+    ##  3rd :8                                   Median : 13.50  
+    ##  Crew:8                                   Mean   : 68.78  
+    ##                                           3rd Qu.: 77.00  
+    ##                                           Max.   :670.00
 
 \#We can also use summarize for a speicifc vairable
 
